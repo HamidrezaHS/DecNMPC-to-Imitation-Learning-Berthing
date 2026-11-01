@@ -1,0 +1,8 @@
+{
+  "stage4_routed": {
+    "n": 6,
+    "success": 4,
+    "unsafe": 0
+  },
+  "caveat": "Descriptive results, NOT a safety proof. A watchdog termination is incomplete."
+}

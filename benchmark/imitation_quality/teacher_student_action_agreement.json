@@ -1,0 +1,152 @@
+{
+  "meaning": "Archived expert-action agreement, raw neural specialist outputs; not post-processed final actions or closed-loop generalization",
+  "angle_note": "Azimuth MAE is conditioned on teacher fraction >=0.06 to avoid undefined near-zero thrust angles",
+  "caveat": "Test is one held-aside recorded demonstration case. Subsequent policy-development decisions may have been informed by related evaluation; do not treat as a prospective independent study.",
+  "dataset": "/mnt/data/AOR_17p_final_work/github/il_results/stage4/development_dagger_dataset.npz",
+  "splits": {
+    "train": {
+      "n": 32016,
+      "fraction_MAE": 0.028608089312911034,
+      "force_vector_MAE": 0.0337999165058136,
+      "active_azimuth_MAE_deg": 3.0095889568328857,
+      "n_active": 23294,
+      "teacher_near_zero_rate": 0.22360694652673663,
+      "student_near_zero_rate": 0.17684907546226886,
+      "adverse_gate_rate": 0.39855072463768115,
+      "by_agent": {
+        "1": {
+          "n": 8004,
+          "fraction_MAE": 0.02578161098062992,
+          "force_vector_MAE": 0.029629485681653023,
+          "active_azimuth_MAE_deg": 2.3677690029144287,
+          "n_active": 6332,
+          "teacher_near_zero_rate": 0.16391804097951024,
+          "student_near_zero_rate": 0.0937031484257871
+        },
+        "2": {
+          "n": 8004,
+          "fraction_MAE": 0.039969347417354584,
+          "force_vector_MAE": 0.04732968285679817,
+          "active_azimuth_MAE_deg": 3.7988944053649902,
+          "n_active": 6552,
+          "teacher_near_zero_rate": 0.127936031984008,
+          "student_near_zero_rate": 0.019865067466266866
+        },
+        "3": {
+          "n": 8004,
+          "fraction_MAE": 0.029190484434366226,
+          "force_vector_MAE": 0.034549031406641006,
+          "active_azimuth_MAE_deg": 3.148301839828491,
+          "n_active": 5216,
+          "teacher_near_zero_rate": 0.293728135932034,
+          "student_near_zero_rate": 0.2827336331834083
+        },
+        "4": {
+          "n": 8004,
+          "fraction_MAE": 0.019490910694003105,
+          "force_vector_MAE": 0.023691469803452492,
+          "active_azimuth_MAE_deg": 2.657057762145996,
+          "n_active": 5194,
+          "teacher_near_zero_rate": 0.30884557721139433,
+          "student_near_zero_rate": 0.3110944527736132
+        }
+      }
+    },
+    "val": {
+      "n": 3516,
+      "fraction_MAE": 0.03361998498439789,
+      "force_vector_MAE": 0.037430282682180405,
+      "active_azimuth_MAE_deg": 4.849363803863525,
+      "n_active": 2165,
+      "teacher_near_zero_rate": 0.2306598407281001,
+      "student_near_zero_rate": 0.13680318543799772,
+      "adverse_gate_rate": 0.0,
+      "by_agent": {
+        "1": {
+          "n": 879,
+          "fraction_MAE": 0.03993017598986626,
+          "force_vector_MAE": 0.043306782841682434,
+          "active_azimuth_MAE_deg": 3.4968245029449463,
+          "n_active": 683,
+          "teacher_near_zero_rate": 0.07622298065984073,
+          "student_near_zero_rate": 0.0022753128555176336
+        },
+        "2": {
+          "n": 879,
+          "fraction_MAE": 0.03874906152486801,
+          "force_vector_MAE": 0.04332650825381279,
+          "active_azimuth_MAE_deg": 4.370194911956787,
+          "n_active": 680,
+          "teacher_near_zero_rate": 0.1012514220705347,
+          "student_near_zero_rate": 0.0
+        },
+        "3": {
+          "n": 879,
+          "fraction_MAE": 0.03781720623373985,
+          "force_vector_MAE": 0.04190513864159584,
+          "active_azimuth_MAE_deg": 7.118956089019775,
+          "n_active": 437,
+          "teacher_near_zero_rate": 0.3594994311717861,
+          "student_near_zero_rate": 0.21729237770193402
+        },
+        "4": {
+          "n": 879,
+          "fraction_MAE": 0.01798349805176258,
+          "force_vector_MAE": 0.021182695403695107,
+          "active_azimuth_MAE_deg": 5.555685520172119,
+          "n_active": 365,
+          "teacher_near_zero_rate": 0.3856655290102389,
+          "student_near_zero_rate": 0.32764505119453924
+        }
+      }
+    },
+    "test": {
+      "n": 1056,
+      "fraction_MAE": 0.0367099791765213,
+      "force_vector_MAE": 0.0414508692920208,
+      "active_azimuth_MAE_deg": 2.6100692749023438,
+      "n_active": 530,
+      "teacher_near_zero_rate": 0.4659090909090909,
+      "student_near_zero_rate": 0.2509469696969697,
+      "adverse_gate_rate": 0.0,
+      "by_agent": {
+        "1": {
+          "n": 264,
+          "fraction_MAE": 0.05799098312854767,
+          "force_vector_MAE": 0.061372626572847366,
+          "active_azimuth_MAE_deg": 1.7015365362167358,
+          "n_active": 264,
+          "teacher_near_zero_rate": 0.0,
+          "student_near_zero_rate": 0.003787878787878788
+        },
+        "2": {
+          "n": 264,
+          "fraction_MAE": 0.04630143940448761,
+          "force_vector_MAE": 0.06161647289991379,
+          "active_azimuth_MAE_deg": 3.460386276245117,
+          "n_active": 264,
+          "teacher_near_zero_rate": 0.0,
+          "student_near_zero_rate": 0.0
+        },
+        "3": {
+          "n": 264,
+          "fraction_MAE": 0.03766709566116333,
+          "force_vector_MAE": 0.037933964282274246,
+          "active_azimuth_MAE_deg": 10.294486045837402,
+          "n_active": 2,
+          "teacher_near_zero_rate": 0.8636363636363636,
+          "student_near_zero_rate": 0.0
+        },
+        "4": {
+          "n": 264,
+          "fraction_MAE": 0.0048804073594510555,
+          "force_vector_MAE": 0.0048804073594510555,
+          "active_azimuth_MAE_deg": null,
+          "n_active": 0,
+          "teacher_near_zero_rate": 1.0,
+          "student_near_zero_rate": 1.0
+        }
+      }
+    }
+  }
+}

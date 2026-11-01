@@ -1,0 +1,12 @@
+# CPU/GPU core compatible with the unchanged reference physics stack
+numpy>=1.26,<3
+scipy>=1.11
+matplotlib>=3.7
+pandas>=2.0
+shapely>=2.0
+Pillow>=10
+ezdxf>=1.1
+pytest>=8
+# For an NVIDIA GPU, install an appropriate CUDA build from pytorch.org
+# before or after this file as appropriate for your operating system.
+torch>=2.2

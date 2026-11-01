@@ -1,0 +1,22 @@
+{
+  "schema": "AOR-IL-PROSPECTIVE-1",
+  "status": "UNEXECUTED_PROSPECTIVE_PROTOCOL",
+  "created_before_test_results": true,
+  "note": "These are new proposed test configurations, not validated results. Before using as a prospective test, verify none was used for development or threshold tuning. A case is no longer held out after its result is inspected and used for method changes. Never include these scores in the submitted paper until run and validated.",
+  "fixed_training_release": "il_results/stage4/actors_paper_candidate",
+  "seeds": [1049, 2027, 3079],
+  "max_sim_seconds": 6500,
+  "methods": ["routed_il", "baseline_il", "teacher_nmpc"],
+  "tasks": {
+    "g01_w70c19_120_65": {"psi0": 27, "wind_mps": 7.0, "wind_to_deg": 120, "current_mps": 0.19, "current_to_deg": 65},
+    "g02_w90c27_248_292": {"psi0": 30, "wind_mps": 9.0, "wind_to_deg": 248, "current_mps": 0.27, "current_to_deg": 292},
+    "g03_w65c31_310_215": {"psi0": 18, "wind_mps": 6.5, "wind_to_deg": 310, "current_mps": 0.31, "current_to_deg": 215},
+    "g04_w85c17_30_140": {"psi0": 35, "wind_mps": 8.5, "wind_to_deg": 30, "current_mps": 0.17, "current_to_deg": 140},
+    "g05_calm_h31": {"psi0": 31, "wind_mps": 0, "wind_to_deg": 0, "current_mps": 0, "current_to_deg": 0},
+    "g06_w98c29_195_25": {"psi0": 16, "wind_mps": 9.8, "wind_to_deg": 195, "current_mps": 0.29, "current_to_deg": 25},
+    "g07_w72c26_260_250_shiftmass": {"psi0": 25, "wind_mps": 7.2, "wind_to_deg": 260, "current_mps": 0.26, "current_to_deg": 250, "ship_mass_scale": 1.10},
+    "g08_w8c22_80_100_noise": {"psi0": 28, "wind_mps": 8.0, "wind_to_deg": 80, "current_mps": 0.22, "current_to_deg": 100, "wind_sensor_std_mps": 0.15, "current_sensor_std_mps": 0.008},
+    "g09_w8c25_160_280_target": {"psi0": 33, "wind_mps": 8.0, "wind_to_deg": 160, "current_mps": 0.25, "current_to_deg": 280, "target_x": 80, "target_y": -130},
+    "g10_w6c20_345_295_target": {"psi0": 21, "wind_mps": 6, "wind_to_deg": 345, "current_mps": 0.20, "current_to_deg": 295, "target_x": 35, "target_y": -120}
+  }
+}

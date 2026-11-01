@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the associated Applied Ocean Research manuscript once published."
+type: software
+title: "From Decentralized NMPC to Low-Latency Imitation Learning for Cooperative Tugboat-Assisted Tanker Berthing"
+authors:
+  - family-names: "Salemi"
+    given-names: "Hamidreza Hamrani"
+  - family-names: "Seif"
+    given-names: "Mohammad Saeed"
+version: "1.0.0"
+date-released: "2026-11-01"
+keywords:
+  - "imitation learning"
+  - "decentralized nonlinear model predictive control"
+  - "autonomous tugboats"
+  - "ship berthing"
+  - "closed-loop simulation"

@@ -1,0 +1,23 @@
+[
+  "ship_x_m",
+  "ship_y_m",
+  "ship_psi_rad",
+  "ship_u_mps",
+  "ship_v_mps",
+  "ship_r_radps",
+  "own_x_m",
+  "own_y_m",
+  "own_psi_rad",
+  "own_u_mps",
+  "own_v_mps",
+  "own_r_radps",
+  "own_thrust_N",
+  "own_azimuth_rad",
+  "goal_x_m",
+  "goal_y_m",
+  "goal_psi_rad",
+  "wind_mps",
+  "wind_to_rad",
+  "current_mps",
+  "current_to_rad"
+]

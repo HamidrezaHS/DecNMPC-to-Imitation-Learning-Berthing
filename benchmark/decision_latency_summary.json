@@ -1,0 +1,33 @@
+{
+  "measurement": "Sequential 4-tug control-cycle latency on common online teacher-generated states",
+  "samples": 36,
+  "burn_in_cycles_per_environment": 3,
+  "measured_cycles_per_environment": 18,
+  "timestamp_unix": 1793507978.4025705,
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "cpu": "",
+  "torch": "2.10.0+cpu",
+  "device": "CPU",
+  "threads": 1,
+  "conditions": [
+    {
+      "wind_to_deg": 90,
+      "current_to_deg": 90
+    },
+    {
+      "wind_to_deg": 270,
+      "current_to_deg": 270
+    }
+  ],
+  "student_pipeline": "4 actor feature/forward + local progress/approach filters; weights loaded once",
+  "teacher_pipeline": "4 individually optimized NMPC controllers; warm started, maxiter=6",
+  "included": "Policy calculation and local preprocessing, excludes environment integration/disk I/O, excludes weight loading",
+  "median_IL_cycle_ms": 2.2731145,
+  "p90_IL_cycle_ms": 4.8584135,
+  "median_NMPC_cycle_ms": 110.0773285,
+  "p90_NMPC_cycle_ms": 177.0874965,
+  "ratio_of_medians": 48.42577375666733,
+  "paired_median_speedup": 54.428201025464276,
+  "limitations": "Only early approach states (first roughly 210s); timings depend on hardware, Python, solver, library versions, warm starts. Not a full mission latency guarantee and not a closed-loop outcome comparison."
+}

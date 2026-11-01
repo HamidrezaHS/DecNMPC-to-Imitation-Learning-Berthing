@@ -1,0 +1,11 @@
+{
+  "diagnostic_case": "270/270 reclassified from old test to development train due to repeated inspection; never call unseen again",
+  "samples": 2308,
+  "final_test_reserved": [
+    "noncardinal 30/300",
+    "noncardinal 210/30",
+    "wind/current magnitude changes",
+    "varied seed/heading"
+  ],
+  "source": "il_results/stage2/dagger_balanced/aggregated_round_02.npz"
+}

@@ -1,0 +1,7 @@
+method,case,partition,status,success,unsafe,seconds,position_error_m,intervention_count,progress_interventions,query_count,elapsed_wall_s,protocol_sha256
+stage4_routed,A_255_250_h23,holdout,TIMEOUT,False,False,6499.999999996279,13.907502939332236,66,352,0,54.5,fe58f6bd40b5f4401a97f9f03fb67e968021eed820265cfaec19002ba0c027d1
+stage4_routed,B_105_75_h29,holdout,SUCCESS,True,False,1643.2000000002365,2.2983159989419066,248,0,0,15.5,fe58f6bd40b5f4401a97f9f03fb67e968021eed820265cfaec19002ba0c027d1
+stage4_routed,C_195_310_h26,holdout,SUCCESS,True,False,4735.999999997884,2.408379565616864,0,276,0,42.0,fe58f6bd40b5f4401a97f9f03fb67e968021eed820265cfaec19002ba0c027d1
+stage4_routed,D_calm_h23,holdout,TIMEOUT,False,False,6499.999999996279,2.9639175343681767,0,0,0,48.8,fe58f6bd40b5f4401a97f9f03fb67e968021eed820265cfaec19002ba0c027d1
+stage4_routed,E_270_265_h21_noise,holdout,SUCCESS,True,False,3368.5999999991272,2.4879187700951313,137,304,0,27.5,fe58f6bd40b5f4401a97f9f03fb67e968021eed820265cfaec19002ba0c027d1
+stage4_routed,F_90_90_h22_mass,holdout,SUCCESS,True,False,2063.4000000003143,2.4119555203519147,0,0,0,19.5,fe58f6bd40b5f4401a97f9f03fb67e968021eed820265cfaec19002ba0c027d1

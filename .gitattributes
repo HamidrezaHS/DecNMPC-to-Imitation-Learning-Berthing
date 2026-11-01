@@ -1,0 +1,10 @@
+* text=auto
+*.csv -text
+*.json text eol=lf
+*.npz binary
+*.npy binary
+*.pt binary
+*.pth binary
+*.pdf binary
+*.png binary
+*.dxf -text

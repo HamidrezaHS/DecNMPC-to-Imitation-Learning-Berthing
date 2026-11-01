@@ -1,0 +1,4 @@
+Original controller and plant are copies of the verified ship-state Dec-NMPC simulation sources.
+The user-published parent software release is https://doi.org/10.5281/zenodo.23831645.
+The BC/DAgger extension is a new, separate research prototype.
+Do NOT retroactively modify/reuse the parent's Zenodo release identifier for this new software.

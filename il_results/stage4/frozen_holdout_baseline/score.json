@@ -1,0 +1,8 @@
+{
+  "baseline_stage3": {
+    "n": 6,
+    "success": 2,
+    "unsafe": 1
+  },
+  "caveat": "Descriptive results, NOT a safety proof. A watchdog termination is incomplete."
+}

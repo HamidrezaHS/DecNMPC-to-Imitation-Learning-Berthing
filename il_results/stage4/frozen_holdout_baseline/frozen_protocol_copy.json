@@ -1,0 +1,39 @@
+{
+  "protocol_version": "IL-PAPER-1",
+  "title": "Independent multi-agent imitation learning and environment-routed local supervision",
+  "frozen_at": "2026-11-01",
+  "duration": 6500,
+  "note": "These tests are defined before final evaluations. No training on any holdout rows; any case already used to tune is in development. No formal safety proof.",
+  "methods": {
+    "baseline_stage3": {
+      "actors": "il_results/stage3/actors_balanced",
+      "policy_type": "neural",
+      "safety_filter": true
+    },
+    "stage4_routed": {
+      "actors": "il_results/stage4/actors_paper_candidate",
+      "base_actors": "il_results/stage3/actors_balanced",
+      "policy_type": "routed-neural",
+      "safety_filter": true,
+      "progress_assist": true,
+      "progress_assist_toward_only": true
+    }
+  },
+  "groups": {
+    "development": {
+      "main90": {"psi0": 20, "wind_mps": 8, "wind_to_deg": 90, "current_mps": 0.25, "current_to_deg": 90, "seed": 123},
+      "adverse270": {"psi0": 20, "wind_mps": 8, "wind_to_deg": 270, "current_mps": 0.25, "current_to_deg": 270, "seed": 123},
+      "adverse_shift": {"psi0": 24, "wind_mps": 7.9, "wind_to_deg": 270, "current_mps": 0.23, "current_to_deg": 270, "seed": 123},
+      "noncardinal_240": {"psi0": 22, "wind_mps": 8, "wind_to_deg": 240, "current_mps": 0.25, "current_to_deg": 240, "seed": 123},
+      "calm20": {"psi0": 20, "wind_mps": 0, "wind_to_deg": 0, "current_mps": 0, "current_to_deg": 0, "seed": 123}
+    },
+    "holdout": {
+      "A_255_250_h23": {"psi0": 23, "wind_mps": 7.6, "wind_to_deg": 255, "current_mps": 0.23, "current_to_deg": 250, "seed": 701},
+      "B_105_75_h29": {"psi0": 29, "wind_mps": 7.5, "wind_to_deg": 105, "current_mps": 0.22, "current_to_deg": 75, "seed": 702},
+      "C_195_310_h26": {"psi0": 26, "wind_mps": 8.5, "wind_to_deg": 195, "current_mps": 0.27, "current_to_deg": 310, "seed": 703},
+      "D_calm_h23": {"psi0": 23, "wind_mps": 0, "wind_to_deg": 0, "current_mps": 0, "current_to_deg": 0, "seed": 704},
+      "E_270_265_h21_noise": {"psi0": 21, "wind_mps": 8.2, "wind_to_deg": 270, "current_mps": 0.24, "current_to_deg": 265, "seed": 705, "wind_sensor_std_mps": 0.1, "current_sensor_std_mps": 0.005},
+      "F_90_90_h22_mass": {"psi0": 22, "wind_mps": 8, "wind_to_deg": 90, "current_mps": 0.25, "current_to_deg": 90, "seed": 706, "ship_mass_scale": 1.05}
+    }
+  }
+}
